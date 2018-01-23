@@ -11,17 +11,17 @@ Take couple photos of the checkboard (usually 20-30 photos) by the camera. Renam
 
 ### Do calibration
 
-```
+```cpp
 calibrateCamera cam(24, 11, 7, 20.625, "_calib_imgs\\");
 cam.calibrate();
 cam.generateCalibrationFile();
 ```
 Initiate the calibration. 
 ```cpp
-# nImages: number of calibration images
-# nCornersWidth: number of interior corners in width
-# nCornersHight: number of interior corners in height
-# squareSizeMM: size of one square in millimeter
+// nImages: number of calibration images
+// nCornersWidth: number of interior corners in width
+// nCornersHight: number of interior corners in height
+// squareSizeMM: size of one square in millimeter
 calibrateCamera(int nImages, int nCornersWidth, int nCornersHight, float squareSizeMM, 
   const std::string& imagesDir = "", const std::string& imagesFileName = "img", 
   const std::string& imagesExtension = "jpg");
