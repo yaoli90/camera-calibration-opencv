@@ -17,7 +17,7 @@ cam.calibrate();
 cam.generateCalibrationFile();
 ```
 Initiate the calibration. 
-```
+```cpp
 # nImages: number of calibration images
 # nCornersWidth: number of interior corners in width
 # nCornersHight: number of interior corners in height
