@@ -15,9 +15,13 @@ Initiate the calibration
 
 ```
 calibrateCamera cam(24, 11, 7, 20.625, "_calib_imgs\\");
+cam.calibrate();
+cam.generateCalibrationFile();
 ```
 ```
-calibrateCamera(int nImages, int nCornersWidth, int nCornersHight, float squareSizeMM, const std::string& imagesDir = "", const std::string& imagesFileName = "img", const std::string& imagesExtension = "jpg");
+calibrateCamera(int nImages, int nCornersWidth, int nCornersHight, float squareSizeMM, 
+  const std::string& imagesDir = "", const std::string& imagesFileName = "img", 
+  const std::string& imagesExtension = "jpg");
 ```
 
 A step by step series of examples that tell you have to get a development env running
