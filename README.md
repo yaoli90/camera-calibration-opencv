@@ -5,11 +5,20 @@ You can find the detail in [OpenCV - Camera Calibration and 3D Reconstruction](h
 
 ## Getting Started
 
-Take couple photos of the checkboard (usually 20-30 photos) by the camera. 
+Take couple photos of the checkboard (usually 20-30 photos) by the camera. Rename the photos as "img1", "img2", ...
 
 <img src="https://github.com/yaoli90/camera-calibration-opencv/blob/master/_calib_imgs/img1.jpg" width="400">
 
-### Installing
+### Do calibration
+
+Initiate the calibration
+
+```
+calibrateCamera cam(24, 11, 7, 20.625, "_calib_imgs\\");
+```
+```
+calibrateCamera(int nImages, int nCornersWidth, int nCornersHight, float squareSizeMM, const std::string& imagesDir = "", const std::string& imagesFileName = "img", const std::string& imagesExtension = "jpg");
+```
 
 A step by step series of examples that tell you have to get a development env running
 
