@@ -2,7 +2,7 @@
 
 void main() {
 
-	//calibrateCamera cam(24, 11, 7, 20.625, "_calib_imgs\\");
+	//calibrateCamera cam(24, 11, 7, 20.625, "_calib_imgs");
 	//cam.calibrate();
 	//cam.generateCalibrationFile();
 
