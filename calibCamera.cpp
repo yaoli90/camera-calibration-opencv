@@ -31,7 +31,7 @@ void calibrateCamera::loadCalibrationImages() {
 	cv::Size nCorners = cv::Size(this->nCornersWidth, this->nCornersHight);
 
 	for (int k = 1; k <= this->nImages; k++) {
-		std::string imageFile = this->imagesDir + this->imagesFileName + std::to_string(k) + "." + this->imagesExtension;
+		std::string imageFile = this->imagesDir + "\\" + this->imagesFileName + std::to_string(k) + "." + this->imagesExtension;
 		image = cv::imread(imageFile, CV_LOAD_IMAGE_COLOR);
 		if (image.empty()) {
 			std::cout << "Uable to read" + imageFile + "\n";
