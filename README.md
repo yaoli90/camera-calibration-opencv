@@ -1,7 +1,6 @@
 # Camera Calibration Opencv
 
 This project calibrate a camera base on so-called pinhole camera model. 
-
 You can find the detail in [OpenCV - Camera Calibration and 3D Reconstruction](https://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html).
 
 ## Getting Started
