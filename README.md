@@ -73,3 +73,5 @@ At the first time "undistortFrame" is called, transformation map will be calcula
 ```cpp
 void undistortFrame(cv::Mat& origFrame,cv::Mat& undistortedFrame);
 ```
+
+<img src="https://github.com/yaoli90/camera-calibration-opencv/blob/master/camCali.png" width="800">
