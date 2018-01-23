@@ -11,19 +11,19 @@ Take couple photos of the checkboard (usually 20-30 photos) by the camera. Renam
 
 ### Do calibration
 
-Initiate the calibration
-
 ```
 calibrateCamera cam(24, 11, 7, 20.625, "_calib_imgs\\");
 cam.calibrate();
 cam.generateCalibrationFile();
 ```
+Initiate the calibration. 
 ```
 calibrateCamera(int nImages, int nCornersWidth, int nCornersHight, float squareSizeMM, 
   const std::string& imagesDir = "", const std::string& imagesFileName = "img", 
   const std::string& imagesExtension = "jpg");
 ```
-
+- nImages: 
+- nCornersWidth
 A step by step series of examples that tell you have to get a development env running
 
 Say what the step will be
