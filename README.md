@@ -7,6 +7,8 @@ You can find the detail in [OpenCV - Camera Calibration and 3D Reconstruction](h
 
 Take couple photos of the checkboard (usually 20-30 photos) by the camera. 
 -`![alt text](https://github.com/yaoli90/camera-calibration-opencv/blob/master/_calib_imgs/img1.jpg | width=100)`
+- `![](https://github.com/yaoli90/camera-calibration-opencv/blob/master/_calib_imgs/img1.jpg | width=100)`
+  - ![](https://github.com/yaoli90/camera-calibration-opencv/blob/master/_calib_imgs/img1.jpg | width=100)
 
 ### Installing
 
