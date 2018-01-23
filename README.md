@@ -12,7 +12,7 @@ Take couple photos of the checkboard (usually 20-30 photos) by the camera. Renam
 ### Do calibration
 
 ```cpp
-calibrateCamera cam(24, 11, 7, 20.625, "_calib_imgs\\");
+calibrateCamera cam(24, 11, 7, 20.625, "_calib_imgs");
 cam.calibrate();
 cam.generateCalibrationFile();
 ```
