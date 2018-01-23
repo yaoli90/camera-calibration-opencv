@@ -4,8 +4,9 @@ This project calibrate a camera base on so-called pinhole camera model.
 You can find the detail in [OpenCV - Camera Calibration and 3D Reconstruction](https://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html).
 
 ## Getting Started
-Take 
 
+Take couple photos of the checkboard (usually 20-30 photos) by the camera. 
+![alt text](https://github.com/yaoli90/camera-calibration-opencv/blob/master/_calib_imgs/img1.jpg)
 
 ### Installing
 
