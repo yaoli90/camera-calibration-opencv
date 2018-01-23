@@ -18,12 +18,15 @@ cam.generateCalibrationFile();
 ```
 Initiate the calibration. 
 ```
+# nImages: number of calibration images
+# nCornersWidth: number of interior corners in width
+# nCornersHight: number of interior corners in height
+# squareSizeMM: size of one square in millimeter
 calibrateCamera(int nImages, int nCornersWidth, int nCornersHight, float squareSizeMM, 
   const std::string& imagesDir = "", const std::string& imagesFileName = "img", 
   const std::string& imagesExtension = "jpg");
 ```
-- nImages: 
-- nCornersWidth
+
 A step by step series of examples that tell you have to get a development env running
 
 Say what the step will be
