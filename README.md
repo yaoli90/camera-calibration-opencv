@@ -16,16 +16,38 @@ calibrateCamera cam(24, 11, 7, 20.625, "_calib_imgs\\");
 cam.calibrate();
 cam.generateCalibrationFile();
 ```
-Initiate the calibration. 
+
+Initiate the calibration by setting calibration images information. 
+
 ```cpp
 // nImages: number of calibration images
 // nCornersWidth: number of interior corners in width
 // nCornersHight: number of interior corners in height
 // squareSizeMM: size of one square in millimeter
-calibrateCamera(int nImages, int nCornersWidth, int nCornersHight, float squareSizeMM, 
+
+calibrateCamera::calibrateCamera(int nImages, int nCornersWidth, int nCornersHight, float squareSizeMM, 
   const std::string& imagesDir = "", const std::string& imagesFileName = "img", 
   const std::string& imagesExtension = "jpg");
 ```
+The calibration process includes
+- look for the interior corners for all images
+- store the pixel locations of the interior corners (imagePoints)
+- create a corresponding array to store the actual 3D loaction of the corners (objectPoints)
+- calculate camera matrix (K) and distortion coefficient (D)
+- project the "objectPoints" onto images based on "K" and "D" we just calculated
+- calculate the mean square error between the projected points and "imagePoints"
+
+```cpp
+void calibrate(void);
+```
+
+Finally, write camera matrix (K), distortion coefficient (D) and some other imformation about this calibration to file
+
+```cpp
+void generateCalibrationFile(const std::string& fileName = "cam_.xml");
+```
+
+
 
 A step by step series of examples that tell you have to get a development env running
 
